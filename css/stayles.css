@@ -217,7 +217,18 @@ input::placeholder {
 	cursor: pointer;
 }
 
-.infoText {
+
+.authorImg {
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+}
+
+.authorImg:hover {
+	cursor: pointer;
+}
+
+.info-text {
 	height: 4rem;
 	display: flex;
 	flex-direction: column;

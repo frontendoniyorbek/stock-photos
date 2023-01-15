@@ -98,7 +98,7 @@ function updateUL(data) {
         <a href = "${links.html}"><img class="img" src="${urls.regular
             }" alt="" /></a>
         <div class="info">
-            <div class="infoText">
+            <div class="info-ext">
                 <p class="itemTitle">${user.name}</p>
                 <p class="likes">${likes} likes</p>
             </div>
