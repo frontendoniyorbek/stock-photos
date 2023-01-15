@@ -104,7 +104,7 @@ function updateUL(data) {
             </div>
             <a class="imgLink" href="${user.links.html}">
                 <img
-                    class="authorImg"
+                    class="author-img"
                     src="${user ? user.profile_image.medium : "./nobody.png"}"
                     alt=""
                     width="15"
