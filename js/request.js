@@ -61,7 +61,7 @@ elForm.addEventListener('submit', (e) => {
     elForm.reset()
 })
 
-const statusEl = (color, indicator) => {
+function statusEl(color, indicator) {
     indicatorEl.innerHTML = indicator;
     indicatorEl.style.color = `${color}`;
 }

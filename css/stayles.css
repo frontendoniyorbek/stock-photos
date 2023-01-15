@@ -176,10 +176,11 @@ input::placeholder {
 .img {
     position: absolute;
 	width: 120%;
+    height: 100%;
 	z-index: -1;
 	transition: 1.2s;
-	object-fit: contain;
-	object-position: center center;
+	object-fit: cover;
+	/* object-position: center center; */
 }
 
 .item:hover .img {
