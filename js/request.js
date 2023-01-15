@@ -58,8 +58,13 @@ elForm.addEventListener('submit', (e) => {
 
     const searchApi = `https://api.unsplash.com/search/photos?page=1&query=${inputValue}&client_id=${KEY}`;
     checker(inputValue, searchApi);
+    elForm.reset()
 })
 
+const statusEl = (color, indicator) => {
+    indicatorEl.innerHTML = indicator;
+    indicatorEl.style.color = `${color}`;
+}
 
 function checker(text, api) {
     if (text) {
@@ -81,11 +86,6 @@ function checker(text, api) {
     } else {
         statusEl("red", "plece enter text");
     }
-}
-
-function statusEl(color, indicator) {
-    indicatorEl.innerHTML = indicator;
-    indicatorEl.style.color = `${color}`;
 }
 
 
