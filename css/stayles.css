@@ -215,6 +215,7 @@ input::placeholder {
 
 .author-img:hover {
 	cursor: pointer;
+    color: aqua;
 }
 
 .info-text {

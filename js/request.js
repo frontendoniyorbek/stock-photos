@@ -66,15 +66,15 @@ function checker(text, api) {
         getDate(api)
             .then((data) => {
                 if (data.results && data.results.length == 0) {
-                    statusEl("red", "bunday rasm yo'q");
+                    statusEl("red", "Siz qidirgan nom ostida rasim mavjud emas");
                     list.innerHTML = "";
                 } else {
                     updateUL(data);
-                    statusEl("green", "muvaffaqiyatli");
+                    statusEl("aqua", "Muvaffaqiyatli amalga oshirildi");
                 }
             })
             .catch((err) => {
-                statusEl("red", "limit tugadi yoki xatolik");
+                statusEl("red", "Limit tugadi yoki xatolik");
                 list.innerHTML = "";
                 console.log(err);
             });
