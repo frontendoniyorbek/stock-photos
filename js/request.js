@@ -79,7 +79,7 @@ function checker(text, api) {
                 }
             })
             .catch((err) => {
-                statusEl("red", "Limit tugadi yoki xatolik");
+                statusEl("red", "xatolik yuz berdi");
                 list.innerHTML = "";
                 console.log(err);
             });
